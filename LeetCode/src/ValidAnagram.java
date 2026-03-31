@@ -1,4 +1,4 @@
-public class Main {
+public class ValidAnagram {
 
     public static boolean isAnagram(String s, String t) {
 
