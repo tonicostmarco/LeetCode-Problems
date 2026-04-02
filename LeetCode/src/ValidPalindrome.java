@@ -6,11 +6,9 @@ import java.util.List;
 public class ValidPalindrome {
 
     public static boolean isPalindrome(String s) {
-
+        s = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
         List<Character> inverted = new ArrayList<>();
         List<Character> correct = new ArrayList<>();
-
-        s = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
 
 
         for (int i = 0; i < s.length(); i++) {
